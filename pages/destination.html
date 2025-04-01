@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplore - Explore The World!</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="icon" href="../images/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+
+<body onload="showSelectedDestination()">
+
+    <header id="header">
+        <div class="container">
+            <a href="../index.html">
+                <img class="header-logo" src="../images/logo.png" />
+            </a>
+
+            <nav>
+                <a href="destinations.html">Destinations</a>
+                <a href="plan.html">Plan a Trip</a>
+                <a href="contacts.html">Contacts</a>
+            </nav>
+
+            <div class="search-bar">
+                <input onkeydown="pressEnter(event)" id="search" type="text" placeholder="Search for a trip...">
+                <label onclick="search()" for="search" id="search-label"> <i
+                        class="fa-solid fa-magnifying-glass search-icon"></i> </label>
+            </div>
+
+            <i onclick="mobileMenu()" id="hamburger" class="fa-solid fa-bars"></i>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section>
+            <div class="container">
+
+
+                <div id="destination-info">
+                    
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="outro" data-aos="fade-zoom-in">
+
+                    <div class="outro-video">
+                        <video autoplay muted loop src="../videos/travel.mp4"></video>
+                    </div>
+
+                    <div class="outro-text">
+                        <h1 class="section-title">Trust our experience</h1>
+                        <h1 class="section-title">And enjoy your trips</h1>
+
+                        <div class="outro-items">
+                            <div class="outro-item">
+                                <h2>15+</h2>
+                                <p>Years of experience</p>
+                            </div>
+
+                            <div class="outro-item">
+                                <h2>200+</h2>
+                                <p>Destinations</p>
+                            </div>
+
+                            <div class="outro-item">
+                                <h2>30.000+</h2>
+                                <p>Happy customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3 class="centered">Xplore</h3>
+            <p class="centered">Copyright 2025. Developed by Bîtca Ernest</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/destinations.js"></script>
+</body>
+
+</html>

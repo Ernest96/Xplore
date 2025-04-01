@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplore - Explore The World!</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="icon" href="../images/favicon.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <a href="../index.html">
+                <img class="header-logo" src="../images/logo.png" />
+            </a>
+
+            <nav>
+                <a href="destinations.html">Destinations</a>
+                <a href="plan.html">Plan a Trip</a>
+                <a href="contacts.html">Contacts</a>
+            </nav>
+
+            <div class="search-bar">
+                <input onkeydown="pressEnter(event)" id="search" type="text" placeholder="Search for a trip...">
+                <label onclick="search()" for="search" id="search-label"> <i class="fa-solid fa-magnifying-glass search-icon"></i> </label>
+            </div>
+
+            <i onclick="mobileMenu()" id="hamburger" class="fa-solid fa-bars"></i>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section>
+            <div class="container">
+                <h3 class="sub-title centered">Contact us</h3>
+                <h1 class="section-title centered">Let's get in touch</h1>
+
+                <br/>
+                <div class="row">
+                    <div class="col-50">
+                        <div class="contacts" data-aos="fade-zoom-in" data-aos-delay="300">
+
+                            <i class="fa-solid fa-phone"></i>
+                            <a href="tel:+373 000 000">+373 000 000</a>
+
+                            <br/> <br/>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:bitca.ernest@gmail.com">bitca.ernest@gmail.com</a>
+
+                            <br/> <br/>
+                            <i class="fa-solid fa-location-pin"></i>
+                            <span>Moldova, Chisinau, bd. Stefan Cel Mare 148</span>
+
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2717.8184155399895!2d28.864798312338337!3d47.06341227102489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97cdfd5ea1de7%3A0x41e815fb62f45930!2sTekwill!5e0!3m2!1sro!2s!4v1742310573798!5m2!1sro!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <img data-aos="fade-zoom-in" class="contact-img" src="../images/contact.png" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="outro" data-aos="fade-zoom-in">
+
+                    <div class="outro-video">
+                        <video autoplay muted loop src="../videos/travel.mp4"></video>
+                    </div>
+
+                    <div class="outro-text">
+                        <h1 class="section-title">Trust our experience</h1>
+                        <h1 class="section-title">And enjoy your trips</h1>
+
+                        <div class="outro-items">
+                            <div class="outro-item">
+                                <h2>15+</h2>
+                                <p>Years of experience</p>
+                            </div>
+
+                            <div class="outro-item">
+                                <h2>200+</h2>
+                                <p>Destinations</p>
+                            </div>
+
+                            <div class="outro-item">
+                                <h2>30.000+</h2>
+                                <p>Happy customers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3 class="centered">Xplore</h3>
+            <p class="centered">Copyright 2025. Developed by Bîtca Ernest</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
